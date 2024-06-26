@@ -1,0 +1,89 @@
+/*
+* #0CEAD4
+*/
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    background-color: black;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+}
+
+.nav-button{
+    border: 20px;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #0061b51d;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.nav-button i{
+    color: #0CEAD4;
+}
+
+.overlay{
+    width: 0%;
+    height: 100%;
+    
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top:0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content{
+    
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 50%;
+    
+}
+
+.overlay a{
+    
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 20px;
+    transition: 0.3s;
+
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 25px;
+}
+
+.menu-icon{
+    cursor: pointer;
+}
+
+
+html, body{
+    width: 100%;
+    height:100%;
+}
+
+
+
+
