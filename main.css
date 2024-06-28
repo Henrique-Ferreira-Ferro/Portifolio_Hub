@@ -15,7 +15,30 @@ header{
     justify-content: space-between;
     align-items: center;
    
-   
+}
+
+.my_image{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 0px 30px 0px;
+}
+
+.my_image img{
+    
+    border-radius: 50%;
+    width: 62vw;
+    height: 62vw;
+    top: 3rem;
+}
+
+.head-container{
+    margin: 10px 15px 40px 15px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.head-container span{
+    color: #0CEAD4;
 }
 
 .nav-button{
@@ -84,6 +107,106 @@ html, body{
     height:100%;
 }
 
+#home{
+    margin: 20px;
+}
 
+.home-div-Initi{
+    margin: 10px 0px 10px 0px;
+}
+.home-div-Initi h1{
+    margin: 10px 0px 10px 0px;
+    font-size: 30px;
+}
 
+.home-div-Initi p{
+    
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0CEAD4;
+    border-right: 2px solid #0CEAD4;
+    white-space: nowrap;
+    overflow: hidden;
 
+    width: 12.1ch;
+
+    animation: mark .5s step-end infinite, write 6s steps(22, end) infinite;
+
+}
+
+@keyframes mark {
+    
+    50%{
+        border-right-color: transparent;
+    }
+
+}
+
+@keyframes write {
+    0%, 100% {
+        width: 0;
+    }
+    30%, 50% {
+        width: 12.1ch; /* Define a largura do texto */
+    }
+    70%, 85% {
+        width: 0; /* Apaga o texto lentamente */
+    }
+
+}
+
+.show-div{
+    margin:0px 0px 15px 0px ;
+}
+
+.btn-container{
+    margin: 10px 0px 15px 0px;
+    justify-content: center;
+    display: flex;
+}
+
+.btn-container button {
+    margin: 0px 10px 0px 0px;
+    width: 135px;
+    height: 37px;
+    border-radius: 10px;
+    border: 2px solid transparent; /* Adicionamos uma borda transparente para que ela apareça ao passar o mouse */
+    color: #0CEAD4;
+    background-color: transparent;
+    box-shadow: 0 0 25px rgba(12, 234, 212, 0.3); /* Ajustamos a sombra com um efeito mais suave */
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative; /* Para manipular o brilho */
+    overflow: hidden; /* Para ajustar o brilho */
+}
+
+.btn-container button:hover {
+    transform: scale(1.05) translateY(-5px); /* Aumentamos um pouco o tamanho e levantamos o botão */
+    background-color: rgba(12, 234, 212, 0.1); /* Ajustamos a cor de fundo ao passar o mouse */
+    border-color: #0CEAD4; /* Ajustamos a cor da borda ao passar o mouse */
+    box-shadow: 0 0 35px rgba(12, 234, 212, 0.5); /* Ajustamos a sombra para destacar mais */
+}
+
+.btn-container button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.btn-container button:hover::before {
+    transform: scale(1.2);
+}
+
+.btn-container button span {
+    position: relative;
+    z-index: 1;
+}
