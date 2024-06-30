@@ -613,11 +613,6 @@ footer a:hover img {
 }
 
 
-
-
-
-
-
 /* Responsividade */
 @media (max-width: 992px) {
     .container-article {
@@ -632,8 +627,158 @@ footer a:hover img {
 }
 
 
+/* Ajustes para dispositivos móveis */
 
 
+/* Ajustes para dispositivos maiores */
+@media (min-width: 801px) {
+    .nav-button {
+        display: none;
+    }
+
+    .head-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .head-container p {
+        font-size: 25px;
+        margin-left: 50px;
+        width: 250px;
+    }
+
+   
+    .overlay {
+        width: 100%;
+        height: auto;
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .overlay-content {
+        display: flex;
+        justify-content: flex-end;
+        width: auto;
+        margin: 0;
+        padding: 40px;
+    }
+    .overlay .closebtn {
+        display: none;
+    }
+    
+    .my_image{
+        display: flex;
+       justify-content: flex-end;
+    }
+    .my_image img{
+        width: 460px;
+        height: 460px;
+        margin-right: 140px;
+    }
+
+    .home-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .home-content {
+        max-width: 50%;
+        padding-right: 20px;
+    }
+
+    .show-div{
+        width: 650px;
+    }
+    
+    .btn-container{
+        justify-content: flex-start;
+    }
+    
+    .my_network_p{
+        justify-content: flex-start;
+    }
+
+    .btn-container-icons{
+        justify-content: flex-start;
+    }
+
+    .sobre_container{
+        width: 700px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #323232; /* Fundo para a seção */
+        border-radius: 8px;
+        text-align: justify;
+    }
+    
+    .sobre_container h3{
+        background-color: #323232; /* Fundo para a seção */
+        color: #0CEAD4;
+    }
+
+    .sobre_container h4{
+        background-color: #323232; /* Fundo para a seção */
+    }
+
+    .sobre_container p{
+        background-color: #323232; /* Fundo para a seção */
+    }
+
+    /*As cores estão com algum problema, tenho que evitar de alterar o fundo!*/
+    .logos{
+        background-color: #323232;
+    }
+    .logos div{
+        background-color: #323232;
+    }
+
+    .logos img{
+        background-color: #323232;
+    }
+
+    .containerMain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 40px;
+        border-radius: 8px;
+        text-align: justify;
+    }
+
+    .row{
+        justify-content: center;
+        display: flex;
+    }
+    .coluna-00 {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .box {
+        margin-bottom: 20px;
+    }
+
+    .box h4 {
+        color: #0CEAD4;
+    }
+    
+    .btn-mov{
+        justify-content: center;
+    }
+
+}
 
 
 
